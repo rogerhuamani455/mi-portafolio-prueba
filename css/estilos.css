@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #4caf50;
+}
+
+.skills {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.skills h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skills-item {
+    padding: 15px;
+}
+
+.skills-item img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#proyectos {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#proyectos h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #333;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.proyectos-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.proyectos-card h3 {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* @media (max-width: 600px) {
+    .grid-proyectos {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+} */
+
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: flex;
+        font-size: 1.5em;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        background-color: #444;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+}
